@@ -429,7 +429,7 @@
 		<CustomBehavior File="Vehicles\FlyingVehicle" QuestId="13045" VehicleId="30228" NpcList="30407"
 			PickUpPassengerButton="1" DropPassengerButton="2" SpeedButton="3"
       Path="6608.668, 443.7926, 436.0548 | 6713.227, 484.2516, 446.7397 | 6598.934, 582.8495, 437.1812 "
-      EndX="6216.801" EndY="4.160139" EndZ="416.227"/>
+      EndPath="6216.801, 4.160139, 416.227"/>
 	</While>
   <CustomBehavior File="EjectVeh" />
 </If>
