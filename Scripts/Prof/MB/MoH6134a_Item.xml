@@ -24,7 +24,11 @@
   </Mailboxes>
 <QuestOrder >
 <LootMobs Value="true" />
-<CustomBehavior Nav="Fly" File="CollectThings" MobId="57649" CollectItemCount="10" CollectItemId="89112" MobState="Alive">
+<If Condition="GetItemCount(89112) &lt; 10">
+  <SetGrindArea>
+  <GrindArea>
+  <MobIDs>57649</MobIDs>
+  <Hotspots>
 <Hotspot X="-457.5014" Y="-402.3283" Z="93.98557" />
 <Hotspot X="-468.1378" Y="-441.2356" Z="98.55302" />
 <Hotspot X="-465.6519" Y="-482.4917" Z="99.90302" />
@@ -35,6 +39,11 @@
 <Hotspot X="-435.8966" Y="-541.9919" Z="105.7773" />
 <Hotspot X="-430.9688" Y="-501.4665" Z="102.5056" />
 <Hotspot X="-422.8206" Y="-461.1371" Z="97.48264" />
-</CustomBehavior>
+  </Hotspots>
+  </GrindArea>
+  </SetGrindArea>
+  <GrindTo Nav="Fly" Condition="GetItemCount(89112) &gt;= 10" />
+</If>
+<LootMobs Value="null" />
 </QuestOrder>
 </HBProfile>

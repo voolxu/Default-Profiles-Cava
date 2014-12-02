@@ -24,9 +24,11 @@
   </Mailboxes>
 <QuestOrder >
 <LootMobs Value="true" />
-<CustomBehavior Nav="Fly" File="CollectThings" MobId1="21941" MobId2="21284" MobId3="16810" MobId4="16772" MobId5="18260" MobId6="16805"
-  MobId7="21660" MobId8="21661" MobId9="21902" MobId10="21662" MobId11="38030" MobId12="21370" MobId13="21368" MobId14="1410" MobId15="5355"
-  MobId16="16769" MobId17="22144" MobId18="18460" MobId19="16519" MobId20="17088" MobId21="18456" MobId22="21636" MobId23="18595" CollectItemCount="20" CollectItemId="21877" MobState="Alive">
+<If Condition="GetItemCount(21877) &lt; 20">
+  <SetGrindArea>
+  <GrindArea>
+  <MobIDs>21941, 21284, 16810, 16772, 18260, 16805, 21660, 21661, 21902, 21662, 38030, 21370, 21368, 1410, 5355, 16769, 22144, 18460, 16519, 17088, 18456, 21636, 18595</MobIDs>
+  <Hotspots>
 <Hotspot X="-2972.587" Y="4979.647" Z="-21.01517" />
 <Hotspot X="-3003.39" Y="4952.828" Z="-22.2427" />
 <Hotspot X="-3042.585" Y="4944.356" Z="-22.43591" />
@@ -79,6 +81,11 @@
 <Hotspot X="-3209.888" Y="4488.525" Z="-22.23351" />
 <Hotspot X="-3144.272" Y="4598.624" Z="-21.55455" />
 <Hotspot X="-3108.951" Y="4618.002" Z="-20.34381" />
-</CustomBehavior>
+  </Hotspots>
+  </GrindArea>
+  </SetGrindArea>
+  <GrindTo Nav="Fly" Condition="GetItemCount(21877) &gt;= 20" />
+</If>
+<LootMobs Value="null" />
 </QuestOrder>
 </HBProfile>
