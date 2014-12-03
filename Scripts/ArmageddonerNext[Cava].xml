@@ -3,6 +3,11 @@
 <QuestOrder>
 <If Condition="(Me.Level &gt;= 81)">
 	<If Condition="IsQuestCompleted(30928)">
+		<If Condition="Me.IsAlliance &amp;&amp; !HasQuest(35659) &amp;&amp; IsQuestCompleted(35659) &amp;&amp; Me.Level &gt;= 94">
+			<CustomBehavior File="LoadProfile" ProfileName="[A-Quest]Armageddoner(94-95)ShadowMoonValley[Cava]" />
+		</If>
+
+
 		<If Condition="Me.IsAlliance &amp;&amp; !HasQuest(33256) &amp;&amp; IsQuestCompleted(33256)">
 			<CustomBehavior File="LoadProfile" ProfileName="[N-Quest]Armageddoner(92-94)Gorgrond[Cava]" />
 		</If>	          

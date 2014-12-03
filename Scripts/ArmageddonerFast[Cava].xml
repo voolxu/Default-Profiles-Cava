@@ -4,7 +4,10 @@
 <If Condition="(Me.Level &gt;= 90)">
 	<If Condition="HasQuest(30928) &amp;&amp; !IsQuestCompleted(30928)">
 		<CustomBehavior File="LoadProfile" ProfileName="[N-Quest]Armageddoner(90-90)TanaanJungle[Cava]" />
-	</If>	          
+	</If>	    
+	<If Condition="Me.IsAlliance &amp;&amp; Me.Level &gt;= 94">
+		<CustomBehavior File="LoadProfile" ProfileName="[A-Quest]Armageddoner(94-95)ShadowMoonValley[Cava]" />
+	</If>
 	<If Condition="(Me.Level &gt;= 92)">
 		<CustomBehavior File="LoadProfile" ProfileName="[N-Quest]Armageddoner(92-94)Gorgrond[Cava]" />
 	</If>
