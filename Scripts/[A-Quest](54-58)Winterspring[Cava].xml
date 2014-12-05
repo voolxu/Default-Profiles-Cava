@@ -1432,9 +1432,7 @@
 	TransportStartX="8162.587" TransportStartY="1005.365" TransportStartZ="-0.02063938"
 	TransportEndX="-8650.719" TransportEndY="1346.051" TransportEndZ="0.04130154" />
 </If>
-<RunTo X="-9006.103" Y="870.3699" Z="129.693" />
-<CustomBehavior File="InteractWith" MobId="235882" WaitForNpcs="False" Range="8" NonCompeteDistance="0" WaitTime="12000" X="-9007.301" Y="872.2969" Z="129.6921" />
-    <RunTo X="-10915.95" Y="-3394.028" Z="81.71524" />
+<RunTo X="-10915.95" Y="-3394.028" Z="81.71524" />
 <TurnIn QuestName="Blasted Lands: The Other Side of the World" QuestId="28857" TurnInName="Quartermaster Lungertz" TurnInId="5393" X="-10912.7" Y="-3394.94" Z="81.71552" />
 <CustomBehavior File="LoadProfile" ProfileName="[A-Quest](58-60)BlastedLands[Cava]" />
 </QuestOrder>
