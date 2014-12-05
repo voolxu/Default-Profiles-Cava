@@ -640,10 +640,15 @@
   <If Condition="Me.ZoneId != 1637">
     <CustomBehavior File="LoadProfile" ProfileName="MovetoMainCity[Cava]" />
   <Else>
-		<RunTo X="1775.403" Y="-4328.412" Z="-8.084095" />
-    <CustomBehavior File="InteractWith" MobId="235877" WaitForNpcs="False" Range="8" NonCompeteDistance="0" WaitTime="12000" X="1767.899" Y="-4326.429" Z="-8.405741" />		
-    <RunTo X="-10931.16" Y="-2792.609" Z="25.69575" />
-    </Else>
+		<RunTo X="1863.458" Y="-4412.659" Z="135.2328" />
+		<CustomBehavior File="UseTransport" TransportId="175080"
+			WaitAtX="1864.878" WaitAtY="-4414.582" WaitAtZ="135.2331"
+			GetOffX="-12446.41" GetOffY="217.9426" GetOffZ="31.5501"
+			StandOnX="1874.667" StandOnY="-4423.675" StandOnZ="135.1214"
+			TransportStartX="1880.818" TransportStartY="-4435.269" TransportStartZ="152.8608"
+			TransportEndX="-12464.34" TransportEndY="233.1597" TransportEndZ="49.53437"/>
+		<RunTo X="-10933.3" Y="-2790.98" Z="25.6968" />
+		<CustomBehavior File="InteractWith" MobId="43121" MobState="Alive" X="-10931.3" Y="-2794.58" Z="25.69872" />    </Else>
   </If>
 </If>
 <If Condition="Me.Level &gt;= 60">
