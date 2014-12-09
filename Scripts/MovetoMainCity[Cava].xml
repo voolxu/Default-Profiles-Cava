@@ -78,6 +78,14 @@
 
 <!-- # # # # # # # # # # # # # Alliance Character # # # # # # # # # # # # #-->
 <If Condition="Me.IsAlliance" >
+
+<!--Ashran
+<Hotspot X="3730.774" Y="-4042.656" Z="44.60921" />
+<GameObject Name="Portal to Stormwind" Entry="235883" X="3734.65" Y="-4042.976" Z="44.81873" />
+-->
+
+
+
 	<!--Mop Side-->
 	<If Condition="Me.ZoneId == 5785 || Me.ZoneId == 6134 || Me.ZoneId == 5841 || Me.ZoneId == 5805 || Me.ZoneId == 5842 || Me.ZoneId == 6138 || Me.ZoneId == 6661 || Me.ZoneId == 5840  || Me.ZoneId == 6507 || Me.ZoneId == 6757">
 		<CustomBehavior File="Cava\FlyTo" Land="True" X="-308.6749" Y="-1774.119" Z="62.47319" />

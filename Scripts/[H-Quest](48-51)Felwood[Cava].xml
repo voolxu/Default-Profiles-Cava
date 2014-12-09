@@ -952,26 +952,28 @@
   </While>
 </If>
 <If Condition="HasQuest(28334) &amp;&amp; !IsQuestCompleted(28334)">
+	<CustomBehavior File="Hooks\DoWhen" ItemId="63514" AllowUseDuringCombat="True" UseWhen="Me.CarriedItems.Any(i =&gt; (i.Entry == 63514) &amp;&amp; (i.Cooldown == 0))" />
   <While Condition="!IsQuestCompleted(28334)">
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6600.932" Y="-1620.813" Z="493.631" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6595.857" Y="-1580.954" Z="487.1054" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6590.02" Y="-1541.592" Z="481.3649" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6605.426" Y="-1504.416" Z="474.9276" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6591.42" Y="-1471.274" Z="456.9466" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6555.115" Y="-1480.015" Z="441.4587" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6521.647" Y="-1457.991" Z="438.9233" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6520.451" Y="-1417.058" Z="436.4801" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6541.085" Y="-1381.975" Z="437.5804" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6558.928" Y="-1345.746" Z="437.771" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6592.654" Y="-1331.041" Z="453.545" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6619.228" Y="-1360.644" Z="457.8634" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6636.263" Y="-1396.88" Z="463.4984" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6657.665" Y="-1430.078" Z="470.239" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6680.974" Y="-1463.254" Z="472.9081" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6696.083" Y="-1500.674" Z="472.9337" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6689.593" Y="-1541.041" Z="473.1975" />
-    <CustomBehavior File="ItemWhileMoving" QuestId="28334" ItemId="63514" X="6700.663" Y="-1580.071" Z="474.9756" />
+    <RunTo X="6600.932" Y="-1620.813" Z="493.631" />
+    <RunTo X="6595.857" Y="-1580.954" Z="487.1054" />
+    <RunTo X="6590.02" Y="-1541.592" Z="481.3649" />
+    <RunTo X="6605.426" Y="-1504.416" Z="474.9276" />
+    <RunTo X="6591.42" Y="-1471.274" Z="456.9466" />
+    <RunTo X="6555.115" Y="-1480.015" Z="441.4587" />
+    <RunTo X="6521.647" Y="-1457.991" Z="438.9233" />
+    <RunTo X="6520.451" Y="-1417.058" Z="436.4801" />
+    <RunTo X="6541.085" Y="-1381.975" Z="437.5804" />
+    <RunTo X="6558.928" Y="-1345.746" Z="437.771" />
+    <RunTo X="6592.654" Y="-1331.041" Z="453.545" />
+    <RunTo X="6619.228" Y="-1360.644" Z="457.8634" />
+    <RunTo X="6636.263" Y="-1396.88" Z="463.4984" />
+    <RunTo X="6657.665" Y="-1430.078" Z="470.239" />
+    <RunTo X="6680.974" Y="-1463.254" Z="472.9081" />
+    <RunTo X="6696.083" Y="-1500.674" Z="472.9337" />
+    <RunTo X="6689.593" Y="-1541.041" Z="473.1975" />
+    <RunTo X="6700.663" Y="-1580.071" Z="474.9756" />
   </While>
+	<CustomBehavior File="Hooks\DoWhen" ItemId="63514" Command="Remove" />
 </If>
 <TurnIn QuestName="It's Time to Oil Up" QuestId="28333" TurnInName="Darla Drilldozer" TurnInId="48127" X="6907.05" Y="-1617.02" Z="503.9767" />
 <TurnIn QuestName="A Flare Fight" QuestId="28334" TurnInName="Darla Drilldozer" TurnInId="48127" X="6907.05" Y="-1617.02" Z="503.9767" />
