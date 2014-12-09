@@ -851,20 +851,25 @@
 <TurnIn QuestName="Flowing to the North" QuestId="24689" TurnInName="Ithis Moonwarden" TurnInId="38263" X="-7159.061" Y="-2294.832" Z="-268.1794" />
 <PickUp QuestName="Bouquets of Death" QuestId="24687" GiverName="Ithis Moonwarden" GiverId="38263" X="-7159.061" Y="-2294.832" Z="-268.1794" />
 <If Condition="HasQuest(24687) &amp;&amp; !IsQuestCompleted(24687)" >
-  
-  <CustomBehavior File="Cava\PullMobs" PullMob="True" QuestId="24687" MobId="38213" MobState="Alive" CollectUntil="QuestComplete" HuntingGroundRadius="200" >
-    <Hotspot X="-7154.958" Y="-2284.508" Z="-268.1763" />
-    <Hotspot X="-7115.22" Y="-2273.248" Z="-266.4176" />
-    <Hotspot X="-7075.078" Y="-2275.348" Z="-269.3998" />
-    <Hotspot X="-7035.793" Y="-2266.738" Z="-270.5745" />
-    <Hotspot X="-6999.101" Y="-2248.984" Z="-271.8267" />
-    <Hotspot X="-6971.545" Y="-2219.639" Z="-272.5565" />
-    <Hotspot X="-6953.694" Y="-2182.291" Z="-272.1486" />
-    <Hotspot X="-6940.339" Y="-2144.24" Z="-270.4767" />
-    <Hotspot X="-6939.734" Y="-2104.149" Z="-271.5825" />
-    <Hotspot X="-6939.126" Y="-2063.89" Z="-271.4555" />
-  </CustomBehavior>
-  
+	<RunTo X="-7154.958" Y="-2284.508" Z="-268.1763" />
+	<SetGrindArea>
+	<GrindArea>
+	<MobIDs>38213</MobIDs>
+	<Hotspots>
+		<Hotspot X="-7154.958" Y="-2284.508" Z="-268.1763" />
+		<Hotspot X="-7115.22" Y="-2273.248" Z="-266.4176" />
+		<Hotspot X="-7075.078" Y="-2275.348" Z="-269.3998" />
+		<Hotspot X="-7035.793" Y="-2266.738" Z="-270.5745" />
+		<Hotspot X="-6999.101" Y="-2248.984" Z="-271.8267" />
+		<Hotspot X="-6971.545" Y="-2219.639" Z="-272.5565" />
+		<Hotspot X="-6953.694" Y="-2182.291" Z="-272.1486" />
+		<Hotspot X="-6940.339" Y="-2144.24" Z="-270.4767" />
+		<Hotspot X="-6939.734" Y="-2104.149" Z="-271.5825" />
+		<Hotspot X="-6939.126" Y="-2063.89" Z="-271.4555" />
+	</Hotspots>
+	</GrindArea>
+	</SetGrindArea>					
+	<GrindTo Condition="IsQuestCompleted(24687)" GoalText="Quest Bouquets of Death" />
 </If>
 <TurnIn QuestName="Bouquets of Death" QuestId="24687" TurnInName="Ithis Moonwarden" TurnInId="38263" X="-7159.061" Y="-2294.832" Z="-268.1794" />
 <PickUp QuestName="Aberrant Flora" QuestId="24855" GiverName="Ithis Moonwarden" GiverId="38263" X="-7159.061" Y="-2294.832" Z="-268.1794" />
