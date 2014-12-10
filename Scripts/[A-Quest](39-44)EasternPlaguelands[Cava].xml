@@ -1062,34 +1062,44 @@
   <CustomBehavior File="ForcedDismount" />
   <CustomBehavior File="UserSettings" UseMount="False" />
   <LootMobs Value="true" />
-  <CustomBehavior File="CollectThings" QuestId="27450" MobId="45650" MobState="Alive" CollectItemCount="8" CollectItemId="61292" HuntingGroundRadius="200" >
-    <Hotspot X="1973.141" Y="-4304.143" Z="16.93481" />
-    <Hotspot X="2005.02" Y="-4327.125" Z="9.354567" />
-    <Hotspot X="2013.71" Y="-4365.909" Z="16.08774" />
-    <Hotspot X="2048.488" Y="-4346.833" Z="10.63531" />
-    <Hotspot X="2081.499" Y="-4369.672" Z="11.39801" />
-    <Hotspot X="2070.952" Y="-4331.023" Z="10.81298" />
-  </CustomBehavior>
-  <CustomBehavior File="CollectThings" QuestId="27450" MobId="45655" MobState="Alive" CollectItemCount="8" CollectItemId="61293" HuntingGroundRadius="200" >
-    <Hotspot X="1973.141" Y="-4304.143" Z="16.93481" />
-    <Hotspot X="2005.02" Y="-4327.125" Z="9.354567" />
-    <Hotspot X="2013.71" Y="-4365.909" Z="16.08774" />
-    <Hotspot X="2048.488" Y="-4346.833" Z="10.63531" />
-    <Hotspot X="2081.499" Y="-4369.672" Z="11.39801" />
-    <Hotspot X="2070.952" Y="-4331.023" Z="10.81298" />
-  </CustomBehavior>
-<!--<CustomBehavior File="CollectThings" QuestId="27450" MobId="45657" MobState="Alive" CollectItemCount="8" CollectItemId="61294" HuntingGroundRadius="200" >-->
-  <CustomBehavior File="CollectThings" QuestId="27450" MobId="45657" MobState="Alive" CollectUntil="QuestComplete" HuntingGroundRadius="200" >
-    <Hotspot X="1973.141" Y="-4304.143" Z="16.93481" />
-    <Hotspot X="2005.02" Y="-4327.125" Z="9.354567" />
-    <Hotspot X="2013.71" Y="-4365.909" Z="16.08774" />
-    <Hotspot X="2048.488" Y="-4346.833" Z="10.63531" />
-    <Hotspot X="2081.499" Y="-4369.672" Z="11.39801" />
-    <Hotspot X="2070.952" Y="-4331.023" Z="10.81298" />
-  </CustomBehavior>
+	<While Condition="!IsQuestCompleted(27450)">
+		<CustomBehavior File="InteractWith" QuestId="27450" QuestObjectiveIndex="1" NonCompeteDistance="0" MobId="45650" NumOfTimes="1000"
+			MobState="Alive" InteractByLooting="True" CollectionDistance="1000" ProactiveCombatStrategy="ClearMobsTargetingUs">
+			<HuntingGrounds>
+				<Hotspot X="1973.141" Y="-4304.143" Z="16.93481" />
+				<Hotspot X="2005.02" Y="-4327.125" Z="9.354567" />
+				<Hotspot X="2013.71" Y="-4365.909" Z="16.08774" />
+				<Hotspot X="2048.488" Y="-4346.833" Z="10.63531" />
+				<Hotspot X="2081.499" Y="-4369.672" Z="11.39801" />
+				<Hotspot X="2070.952" Y="-4331.023" Z="10.81298" />
+			</HuntingGrounds>
+		</CustomBehavior>
+		<CustomBehavior File="InteractWith" QuestId="27450" QuestObjectiveIndex="2" NonCompeteDistance="0" MobId="45655" NumOfTimes="1000"
+			MobState="Alive" InteractByLooting="True" CollectionDistance="1000" ProactiveCombatStrategy="ClearMobsTargetingUs">
+			<HuntingGrounds>
+				<Hotspot X="1973.141" Y="-4304.143" Z="16.93481" />
+				<Hotspot X="2005.02" Y="-4327.125" Z="9.354567" />
+				<Hotspot X="2013.71" Y="-4365.909" Z="16.08774" />
+				<Hotspot X="2048.488" Y="-4346.833" Z="10.63531" />
+				<Hotspot X="2081.499" Y="-4369.672" Z="11.39801" />
+				<Hotspot X="2070.952" Y="-4331.023" Z="10.81298" />
+			</HuntingGrounds>
+		</CustomBehavior>
+		<CustomBehavior File="InteractWith" QuestId="27450" QuestObjectiveIndex="3" NonCompeteDistance="0" MobId="45657" NumOfTimes="1000"
+			MobState="Alive" InteractByLooting="True" CollectionDistance="1000" ProactiveCombatStrategy="ClearMobsTargetingUs">
+			<HuntingGrounds>
+				<Hotspot X="1973.141" Y="-4304.143" Z="16.93481" />
+				<Hotspot X="2005.02" Y="-4327.125" Z="9.354567" />
+				<Hotspot X="2013.71" Y="-4365.909" Z="16.08774" />
+				<Hotspot X="2048.488" Y="-4346.833" Z="10.63531" />
+				<Hotspot X="2081.499" Y="-4369.672" Z="11.39801" />
+				<Hotspot X="2070.952" Y="-4331.023" Z="10.81298" />
+			</HuntingGrounds>
+		</CustomBehavior>
+	</While>
   <CustomBehavior File="AscendInWater" />
   <CustomBehavior File="UserSettings"  UseMount="True" />
-<LootMobs Value="true" />
+	<LootMobs Value="null" />
 </If>
 <If Condition="HasQuest(27451) &amp;&amp; !IsQuestCompleted(27451)">
   <LootMobs Value="true" />
