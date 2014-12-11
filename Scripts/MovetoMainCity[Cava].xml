@@ -82,6 +82,9 @@
 <!--Ashran
 <Hotspot X="3730.774" Y="-4042.656" Z="44.60921" />
 <GameObject Name="Portal to Stormwind" Entry="235883" X="3734.65" Y="-4042.976" Z="44.81873" />
+
+<Hotspot X="5266.061" Y="-4071.415" Z="21.37093" />
+<GameObject Name="Portal to Orgrimmar" Entry="235880" X="5266.4" Y="-4075.891" Z="21.13024" />
 -->
 
 
