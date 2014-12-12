@@ -1,5 +1,5 @@
 <HBProfile creator="Cava">
-<Name>[A-Quest] (92-94) Gorgrond [Cava] $Rev$</Name>
+<Name>[H-Quest] (94-95) Frostfire Ridge [Cava] $Rev$</Name>
 
 <MinLevel>90</MinLevel><MaxLevel>100</MaxLevel><MinDurability>0.2</MinDurability><MinFreeBagSlots>2</MinFreeBagSlots><TargetElites>False</TargetElites>
 <MailGrey>False</MailGrey><MailWhite>False</MailWhite><MailGreen>True</MailGreen><MailBlue>True</MailBlue><MailPurple>True</MailPurple>
@@ -7,21 +7,71 @@
   
 <AvoidMobs>
 </AvoidMobs>
-<Blacklist>
-</Blacklist>
 <Blackspots>
 </Blackspots>
 
 <Mailboxes>
+	<Mailbox X="7854.422" Y="5549.455" Z="111.1171" />
 </Mailboxes>
 
 <Vendors>
+	<Vendor Name="Innkeeper Chall" Entry="78769" Type="Food" X="7869.816" Y="5540.688" Z="111.5248" />
+	<Vendor Name="Oglom the Arm" Entry="78770" Type="Repair" X="7750.497" Y="5589.522" Z="110.9909" />
 </Vendors>
 <!-- ####################################### Quest Overrides ####################################################################### -->
+<Quest Id="34227" Name="What Must Be Done">
+	<Objective Type="CollectItem" ItemId="106237" CollectCount="1">
+		<CollectFrom>
+			<Mob Name="Mother of Wolves" Id="73205" />
+		</CollectFrom>
+		<Hotspots>
+			<Hotspot X="7660.731" Y="5786.134" Z="106.2372" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="34228" Name="A Clew of Worms">
+	<Objective Type="KillMob" MobId="73227" KillCount="15">
+		<Hotspots>
+			<Hotspot X="7880.637" Y="5679.37" Z="111.9601" />
+			<Hotspot X="7897.985" Y="5715.967" Z="109.3752" />
+			<Hotspot X="7870.226" Y="5744.967" Z="107.444" />
+			<Hotspot X="7831.457" Y="5755.067" Z="106.7568" />
+			<Hotspot X="7792.122" Y="5746.382" Z="107.7193" />
+			<Hotspot X="7799.77" Y="5708.096" Z="117.7735" />
+			<Hotspot X="7832.711" Y="5685.403" Z="121.2246" />
+		</Hotspots>
+	</Objective>
+</Quest>	
+<Quest Id="34229" Name="The Sleeper Has Awakened">
+	<Objective Type="KillMob" MobId="70844" KillCount="1">
+		<Hotspots>
+			<Hotspot X="7437.55" Y="5712.673" Z="74.98865" />
+		</Hotspots>
+	</Objective>
+</Quest>	
+<Quest Id="34230" Name="Eye Need That">
+	<Objective Type="CollectItem" ItemId="109700" CollectCount="1">
+		<CollectFrom>
+			<Mob Name="Ogzor the Necrothurge" Id="73243" />
+		</CollectFrom>
+		<Hotspots>
+			<Hotspot X="7994.729" Y="6085.684" Z="61.45" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="34291" Name="Have a Heart">
+	<Objective Type="CollectItem" ItemId="100150" CollectCount="1">
+		<CollectFrom>
+			<Mob Name="Fernus" Id="73492" />
+		</CollectFrom>
+		<Hotspots>
+			<Hotspot X="7788.926" Y="6144.539" Z="74.95306" />
+		</Hotspots>
+	</Objective>
+</Quest>
 <!-- ################################### End of Quest Overrides #################################################################### -->
 <QuestOrder IgnoreCheckPoints="False" >
-		<CustomBehavior File="UserDialog" AllowBotStop="True" SoundCue="Exclamation" SoundCueInterval="1" Text="Profile in development" />
-		<CustomBehavior File="Halt"/>
+  <CustomBehavior File="Cava\LoadProfile" PBL="-1" ProfileName="137-armageddoner-94-95frostfireridge" /> 
 </QuestOrder>
 <ProtectedItems>
 </ProtectedItems>
