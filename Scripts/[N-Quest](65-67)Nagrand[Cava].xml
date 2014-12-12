@@ -3053,7 +3053,6 @@
 			<TurnIn QuestName="Proving Your Strength" QuestId="10479" TurnInName="Warden Bullrok" TurnInId="18407" X="-1356.118" Y="7213.315" Z="33.63373" />
 		</If>
 	</While>	
-  <TurnIn QuestName="Proving Your Strength" QuestId="10479" TurnInName="Warden Bullrok" TurnInId="18407" X="-1356.118" Y="7213.315" Z="33.63373" />
   <TurnIn QuestName="Wanted: Giselda the Crone" QuestId="9935" TurnInName="Warden Bullrok" TurnInId="18407" X="-1356.118" Y="7213.315" Z="33.63373" />
   <TurnIn QuestName="Wanted: Zorbo the Advisor" QuestId="9939" TurnInName="Warden Bullrok" TurnInId="18407" X="-1356.118" Y="7213.315" Z="33.63373" />
   <If Condition="HasQuest(9863)">
