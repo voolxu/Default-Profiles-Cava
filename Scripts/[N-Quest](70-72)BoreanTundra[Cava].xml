@@ -1716,7 +1716,7 @@
   </SetMailbox>
   <SetVendor>
     <Vendors>
-      <Vendor Nav="Fly" Name="Groll" Entry="26938" Type="Food" X="2808.646" Y="6205.534" Z="104.9369" />
+      <Vendor Name="Groll" Entry="26938" Type="Food" X="2808.646" Y="6205.534" Z="104.9369" />
       <Vendor Nav="Fly" Name="Apprentice Fraser" Entry="27137" Type="Food" X="3639.235" Y="5883.9" Z="140.1045" />
       <Vendor Nav="Fly" Name="Librarian Serrah" Entry="26110" Type="Food" X="3576.481" Y="6640.387" Z="195.0935" />
       <Vendor Nav="Fly" Name="Trader Alorn" Entry="26718" Type="Food" X="3430.155" Y="4137.813" Z="16.86737" />
