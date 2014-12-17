@@ -3223,7 +3223,7 @@
   <While Condition="!HasQuest(11946)" >
 		<If Condition="!HasItem(35671)">
 			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
-			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" Range="2" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
 			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
 			<If Condition="!HasItem(35671)">
 				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
@@ -3256,7 +3256,7 @@
 <While Condition="HasQuest(11946)" >
 		<If Condition="!HasItem(35671)">
 			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
-			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" Range="2" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
 			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
 			<If Condition="!HasItem(35671)">
 				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
@@ -3289,7 +3289,7 @@
   <While Condition="!HasQuest(11951)" >
 		<If Condition="!HasItem(35671)">
 			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
-			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" Range="2" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
 			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
 			<If Condition="!HasItem(35671)">
 				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
@@ -3334,7 +3334,7 @@
   <While Condition="HasQuest(11951)" >
 		<If Condition="!HasItem(35671)">
 			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
-			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" Range="2" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
 			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
 			<If Condition="!HasItem(35671)">
 				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
@@ -3369,7 +3369,7 @@
   <While Condition="!HasQuest(11957)" >
 		<If Condition="!HasItem(35671)">
 			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
-			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" Range="2" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
 			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
 			<If Condition="!HasItem(35671)">
 				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
@@ -3403,7 +3403,7 @@
   <While Condition="!IsQuestCompleted(11957)" >
 		<If Condition="!HasItem(35671)">
 			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
-			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" Range="2" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
 			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
 			<If Condition="!HasItem(35671)">
 				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
@@ -3436,7 +3436,7 @@
 	<While Condition="HasQuest(11957)" >
 		<If Condition="!HasItem(35671)">
 			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
-			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" Range="2" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
 			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
 			<If Condition="!HasItem(35671)">
 				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
@@ -3484,7 +3484,7 @@
   <While Condition="!HasQuest(11967)" >
 		<If Condition="!HasItem(35671)">
 			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
-			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" Range="2" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
 			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
 			<If Condition="!HasItem(35671)">
 				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
