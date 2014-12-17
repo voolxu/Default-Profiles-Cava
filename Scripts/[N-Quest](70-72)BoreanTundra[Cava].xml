@@ -3247,18 +3247,21 @@
 </While>
 <If Condition="!HasQuest(11951) &amp;&amp; !IsQuestCompleted(11951)" >
   <While Condition="!HasQuest(11951)" >
-    <CustomBehavior File="Cava\FlyTo" X="3574.972" Y="6652.38" Z="195.1879" />
-    <CustomBehavior File="ForcedDismount" />
-    <CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
-    <While Condition="HasQuestAvailable(26206)" >
-      <CustomBehavior File="InteractWith" NonCompeteDistance="0" MobId="26206" KeepTargetSelected="True" MovementBy="NavigatorPreferred" WaitForNpcs="False"/>
-      <CustomBehavior File="RunMacro" Macro="/script SelectGossipAvailableQuest(1)" />
-      <CustomBehavior File="RunMacro" Macro="/click QuestFrameAcceptButton" />
-<!--
-<PickUp QuestName="Bait and Switch" QuestId="11951" GiverName="Keristrasza" GiverId="26206" />
--->
-    </While>
-  </While>
+		<If Condition="!HasItem(35671)">
+			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
+			<CustomBehavior File="InteractWith" InteractByGossipOptions="2" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+		</If>
+		<If Condition="HasItem(35671)">
+			<CustomBehavior File="Cava\FlyTo" X="3574.972" Y="6652.38" Z="195.1879" />
+			<CustomBehavior File="ForcedDismount" />
+			<CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
+			<While Condition="HasQuestAvailable(26206)" >
+				<CustomBehavior File="InteractWith" NonCompeteDistance="0" MobId="26206" KeepTargetSelected="True" MovementBy="NavigatorPreferred" WaitForNpcs="False"/>
+				<CustomBehavior File="RunMacro" Macro="/script SelectGossipAvailableQuest(1)" />
+				<CustomBehavior File="RunMacro" Macro="/click QuestFrameAcceptButton" />
+			</While>
+		</If>
+	</While>
 </If>
 <If Condition="HasQuest(11931) &amp;&amp; !IsQuestCompleted(11931)" >
   <CustomBehavior File="Cava\FlyTo" X="3799.451" Y="6676.156" Z="150.6605" />
