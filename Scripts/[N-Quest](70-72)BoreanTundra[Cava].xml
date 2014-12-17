@@ -3221,6 +3221,26 @@
   <CustomBehavior File="Cava\FlyTo" X="3574.972" Y="6652.38" Z="195.1879" />
   <CustomBehavior File="ForcedDismount" />
   <While Condition="!HasQuest(11946)" >
+		<If Condition="!HasItem(35671)">
+			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton4" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton3" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton2" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton1" />
+			</If>
+		</If>
     <RunTo X="3574.972" Y="6652.38" Z="195.1879" />
     <CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
     <While Condition="HasQuestAvailable(26206)" >
@@ -3234,6 +3254,26 @@
   </While>
 </If>
 <While Condition="HasQuest(11946)" >
+		<If Condition="!HasItem(35671)">
+			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton4" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton3" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton2" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton1" />
+			</If>
+		</If>
   <CustomBehavior File="Cava\FlyTo" X="3574.972" Y="6652.38" Z="195.1879" />
   <CustomBehavior File="ForcedDismount" />
   <CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
@@ -3249,18 +3289,32 @@
   <While Condition="!HasQuest(11951)" >
 		<If Condition="!HasItem(35671)">
 			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
-			<CustomBehavior File="InteractWith" InteractByGossipOptions="2" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton4" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton3" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton2" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton1" />
+			</If>
 		</If>
-		<If Condition="HasItem(35671)">
-			<CustomBehavior File="Cava\FlyTo" X="3574.972" Y="6652.38" Z="195.1879" />
-			<CustomBehavior File="ForcedDismount" />
-			<CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
-			<While Condition="HasQuestAvailable(26206)" >
-				<CustomBehavior File="InteractWith" NonCompeteDistance="0" MobId="26206" KeepTargetSelected="True" MovementBy="NavigatorPreferred" WaitForNpcs="False"/>
-				<CustomBehavior File="RunMacro" Macro="/script SelectGossipAvailableQuest(1)" />
-				<CustomBehavior File="RunMacro" Macro="/click QuestFrameAcceptButton" />
-			</While>
-		</If>
+		<CustomBehavior File="Cava\FlyTo" X="3574.972" Y="6652.38" Z="195.1879" />
+		<CustomBehavior File="ForcedDismount" />
+		<CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
+		<While Condition="HasQuestAvailable(26206)" >
+			<CustomBehavior File="InteractWith" NonCompeteDistance="0" MobId="26206" KeepTargetSelected="True" MovementBy="NavigatorPreferred" WaitForNpcs="False"/>
+			<CustomBehavior File="RunMacro" Macro="/script SelectGossipAvailableQuest(1)" />
+			<CustomBehavior File="RunMacro" Macro="/click QuestFrameAcceptButton" />
+		</While>
 	</While>
 </If>
 <If Condition="HasQuest(11931) &amp;&amp; !IsQuestCompleted(11931)" >
@@ -3278,6 +3332,26 @@
 </If>
 <If Condition="HasQuest(11951)" >
   <While Condition="HasQuest(11951)" >
+		<If Condition="!HasItem(35671)">
+			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton4" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton3" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton2" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton1" />
+			</If>
+		</If>
 		<CustomBehavior File="Cava\FlyTo" Land="True" X="3577.117" Y="6651.863" Z="195.2527" />
     <CustomBehavior File="ForcedDismount" />
     <CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
@@ -3293,6 +3367,26 @@
 </If>
 <If Condition="!HasQuest(11957) &amp;&amp; !IsQuestCompleted(11957)" >
   <While Condition="!HasQuest(11957)" >
+		<If Condition="!HasItem(35671)">
+			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton4" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton3" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton2" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton1" />
+			</If>
+		</If>
     <CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
     <While Condition="HasQuestAvailable(26206)" >
       <CustomBehavior File="InteractWith" NonCompeteDistance="0" MobId="26206" KeepTargetSelected="True" MovementBy="NavigatorPreferred" WaitForNpcs="False"/>
@@ -3307,6 +3401,26 @@
 <If Condition="HasQuest(11957) &amp;&amp; !IsQuestCompleted(11957)" >
   <LootMobs Value="true" />
   <While Condition="!IsQuestCompleted(11957)" >
+		<If Condition="!HasItem(35671)">
+			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton4" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton3" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton2" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton1" />
+			</If>
+		</If>
     <While Condition="(Me.Z &lt; 630)" >
       <CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
       <CustomBehavior File="InteractWith" WaitTime="12000" InteractByGossipOptions="1" NonCompeteDistance="0" MobId="26206" MovementBy="NavigatorPreferred" WaitForNpcs="False"/>
@@ -3320,6 +3434,26 @@
 </If>
 <If Condition="HasQuest(11957)" >
 	<While Condition="HasQuest(11957)" >
+		<If Condition="!HasItem(35671)">
+			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton4" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton3" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton2" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton1" />
+			</If>
+		</If>
 		<CustomBehavior File="Cava\FlyTo" X="3578.768" Y="6652.638" Z="195.3678" />
     <CustomBehavior File="ForcedDismount" />
     <CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
@@ -3348,6 +3482,26 @@
 </If>
 <If Condition="!HasQuest(11967) &amp;&amp; !IsQuestCompleted(11967)" >
   <While Condition="!HasQuest(11967)" >
+		<If Condition="!HasItem(35671)">
+			<CustomBehavior File="FlyTo" X="3582.023" Y="6654.997" Z="195.6367" />
+			<CustomBehavior File="InteractWith" KeepTargetSelected="True" NonCompeteDistance="0" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs" MobId="26117" X="3570.397" Y="6650.404" Z="195.1806" />
+			<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton6" />
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton5" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton4" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton3" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton2" />
+			</If>
+			<If Condition="!HasItem(35671)">
+				<CustomBehavior File="RunMacro" WaitTime="2000" Macro="/click GossipTitleButton1" />
+			</If>
+		</If>
 		<CustomBehavior File="Cava\FlyTo" X="3578.768" Y="6652.638" Z="195.3678" />
     <CustomBehavior File="ForcedDismount" />
     <CustomBehavior File="Misc\RunLua" WaitTime="2000" NumOfTimes="1" Lua="UseItemByName(35671)" />
