@@ -1,27 +1,72 @@
 <HBProfile creator="Cava">
-<Name>[A-Quest] (92-94) Gorgrond [Cava] $Rev$</Name>
+<Name>[A-Quest] (94-95) Shadow Moon Valley [Cava] $Rev$</Name>
 
 <MinLevel>90</MinLevel><MaxLevel>100</MaxLevel><MinDurability>0.2</MinDurability><MinFreeBagSlots>2</MinFreeBagSlots><TargetElites>False</TargetElites>
 <MailGrey>False</MailGrey><MailWhite>False</MailWhite><MailGreen>True</MailGreen><MailBlue>True</MailBlue><MailPurple>True</MailPurple>
 <SellGrey>True</SellGrey><SellWhite>True</SellWhite><SellGreen>False</SellGreen><SellBlue>False</SellBlue><SellPurple>False</SellPurple>
   
 <AvoidMobs>
+	<Mob Name="Twisted Ancient" Entry="72785" />
 </AvoidMobs>
-<Blacklist>
-</Blacklist>
 <Blackspots>
 </Blackspots>
 
 <Mailboxes>
+	<Mailbox X="1920.843" Y="297.6944" Z="88.96508" />
 </Mailboxes>
 
 <Vendors>
+	<Vendor Name="Provisioner Hanfa" Entry="81346" Type="Food" X="1854.957" Y="269.2205" Z="76.63956" />
+	<Vendor Name="Provisioner Hanfa" Entry="81346" Type="Repair" X="1854.957" Y="269.2205" Z="76.63956" />
+	<Vendor Name="Rory MacDuff" Entry="73701" Type="Repair" X="1513.879" Y="293.6649" Z="66.85575" />
 </Vendors>
 <!-- ####################################### Quest Overrides ####################################################################### -->
+<Quest Id="33062" Name="Catching His Eye">
+  <Objective Type="KillMob" MobId="72783" KillCount="1">
+	  <Hotspots>
+      <Hotspot X="1945.172" Y="800.5273" Z="49.51817" />
+		</Hotspots>
+	</Objective>
+</Quest>
+<Quest Id="33066" Name="Soul Shards of Summoning">
+	<Objective Type="CollectItem" ItemId="109186" CollectCount="1">
+		<CollectFrom>
+		  <Mob Name="Fel Mistress Hagra" Entry="72677" />
+			</CollectFrom>
+		<Hotspots>
+			<Hotspot X="1442.946" Y="869.4757" Z="123.8583" />
+		</Hotspots>
+	</Objective>
+	<Objective Type="CollectItem" ItemId="109187" CollectCount="1">
+		<CollectFrom>
+		  <Mob Name="Grogal the Harvester" Entry="72674" />
+			</CollectFrom>
+		<Hotspots>
+			<Hotspot X="1251.042" Y="872.0816" Z="117.478" />
+		</Hotspots>
+	</Objective>
+	<Objective Type="CollectItem" ItemId="106986" CollectCount="1">
+		<CollectFrom>
+		  <Mob Name="Corruptor Kurgoth" Entry="72647" />
+			</CollectFrom>
+		<Hotspots>
+			<Hotspot X="1583.073" Y="1045.641" Z="70.94883" />
+		</Hotspots>
+	</Objective>
+</Quest>	
+<Quest Id="33168" Name="Heart On Fire">
+	<Objective Type="CollectItem" ItemId="109205" CollectCount="1">
+		<CollectFrom>
+		  <Mob Name="Krosnis" Entry="77488" />
+			</CollectFrom>
+		<Hotspots>
+			<Hotspot X="1433.387" Y="1081.632" Z="104.3623" />
+		</Hotspots>
+	</Objective>
+</Quest>	
 <!-- ################################### End of Quest Overrides #################################################################### -->
 <QuestOrder IgnoreCheckPoints="False" >
-		<CustomBehavior File="UserDialog" AllowBotStop="True" SoundCue="Exclamation" SoundCueInterval="1" Text="Profile in development" />
-		<CustomBehavior File="Halt"/>
+  <CustomBehavior File="Cava\LoadProfile" PBL="-1" ProfileName="138-armageddoner-94-95shadowmoonvalley" /> 
 </QuestOrder>
 <ProtectedItems>
 </ProtectedItems>

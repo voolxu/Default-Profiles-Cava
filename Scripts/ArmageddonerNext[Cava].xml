@@ -3,21 +3,29 @@
 <QuestOrder>
 <If Condition="(Me.Level &gt;= 81)">
 	<If Condition="IsQuestCompleted(30928)">
-		<If Condition="Me.IsAlliance &amp;&amp; !HasQuest(35659) &amp;&amp; IsQuestCompleted(35659) &amp;&amp; Me.Level &gt;= 94">
+		<If Condition="Me.IsAlliance &amp;&amp; !HasQuest(37183) &amp;&amp; IsQuestCompleted(37183)">
+			<CustomBehavior File="LoadProfile" ProfileName="[N-Quest]Armageddoner(94-96)Talador[Cava]" />
+		</If>	          
+		<If Condition="Me.IsHorde &amp;&amp; !HasQuest(34681) &amp;&amp; IsQuestCompleted(34681)">
+			<CustomBehavior File="LoadProfile" ProfileName="[N-Quest]Armageddoner(94-96)Talador[Cava]" />
+		</If>	          
+		<If Condition="Me.IsAlliance &amp;&amp; !HasQuest(36495) &amp;&amp; IsQuestCompleted(36495)">
 			<CustomBehavior File="LoadProfile" ProfileName="[A-Quest]Armageddoner(94-95)ShadowMoonValley[Cava]" />
-		</If>
-
-
-		<If Condition="Me.IsAlliance &amp;&amp; !HasQuest(33256) &amp;&amp; IsQuestCompleted(33256)">
+		</If>	          
+		<If Condition="Me.IsHorde &amp;&amp; !HasQuest(36494) &amp;&amp; IsQuestCompleted(36494)">
+			<CustomBehavior File="LoadProfile" ProfileName="[H-Quest]Armageddoner(94-95)FrostfireRidge[Cava]" />
+		</If>	          
+		<If Condition="Me.IsAlliance &amp;&amp; !HasQuest(35556) &amp;&amp; IsQuestCompleted(35556)">
 			<CustomBehavior File="LoadProfile" ProfileName="[N-Quest]Armageddoner(92-94)Gorgrond[Cava]" />
 		</If>	          
-
-
-		<If Condition="Me.IsHorde &amp;&amp; !HasQuest(34446) &amp;&amp; IsQuestCompleted(34446)">
-			<CustomBehavior File="LoadProfile" ProfileName="[H-Quest]Armageddoner(90-92)FrostfireRidge[Cava]" />
+		<If Condition="Me.IsHorde &amp;&amp; !HasQuest(34867) &amp;&amp; IsQuestCompleted(34867)">
+			<CustomBehavior File="LoadProfile" ProfileName="[N-Quest]Armageddoner(92-94)Gorgrond[Cava]" />
 		</If>	          
 		<If Condition="Me.IsAlliance &amp;&amp; !HasQuest(35884) &amp;&amp; IsQuestCompleted(35884)">
 			<CustomBehavior File="LoadProfile" ProfileName="[A-Quest]Armageddoner(90-92)ShadowMoonValley[Cava]" />
+		</If>	
+		<If Condition="Me.IsHorde &amp;&amp; !HasQuest(34446) &amp;&amp; IsQuestCompleted(34446)">
+			<CustomBehavior File="LoadProfile" ProfileName="[H-Quest]Armageddoner(90-92)FrostfireRidge[Cava]" />
 		</If>	          
 	</If>
 	<If Condition="!HasQuest(30928) &amp;&amp; IsQuestCompleted(30928)">

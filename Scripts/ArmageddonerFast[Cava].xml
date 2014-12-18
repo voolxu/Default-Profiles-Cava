@@ -2,12 +2,21 @@
 <Name>Armageddoner Fast [Cava] $Rev$</Name>
 <QuestOrder>
 <If Condition="(Me.Level &gt;= 90)">
-	<If Condition="HasQuest(30928) &amp;&amp; !IsQuestCompleted(30928)">
+	<If Condition="HasQuest(30928) || !IsQuestCompleted(30928)">
 		<CustomBehavior File="LoadProfile" ProfileName="[N-Quest]Armageddoner(90-90)TanaanJungle[Cava]" />
 	</If>	    
 	<If Condition="Me.IsAlliance &amp;&amp; Me.Level &gt;= 94">
+		<If Condition="!HasQuest(33269) &amp;&amp; IsQuestCompleted(33269)">
+			<CustomBehavior File="Cava\CavaLoader" PBL="9" ProfileName="[N-Quest]Armageddoner(94-96)Talador[Cava]" />
+		</If>
 		<CustomBehavior File="LoadProfile" ProfileName="[A-Quest]Armageddoner(94-95)ShadowMoonValley[Cava]" />
 	</If>
+	<If Condition="Me.IsHorde &amp;&amp; Me.Level &gt;= 94">
+		<If Condition="!HasQuest(34292) &amp;&amp; IsQuestCompleted(34292)">
+			<CustomBehavior File="Cava\CavaLoader" PBL="9" ProfileName="[N-Quest]Armageddoner(94-96)Talador[Cava]" />
+		</If>
+		<CustomBehavior File="LoadProfile" ProfileName="[H-Quest]Armageddoner(94-95)FrostfireRidge[Cava]" />
+	</If>	          
 	<If Condition="(Me.Level &gt;= 92)">
 		<CustomBehavior File="LoadProfile" ProfileName="[N-Quest]Armageddoner(92-94)Gorgrond[Cava]" />
 	</If>
