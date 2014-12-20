@@ -3264,7 +3264,20 @@
       <Objective QuestName="Marked for Death: High Cultist Zangus" QuestId="12056" Type="CollectItem" ItemId="36741" CollectCount="1" />
     </If>
     <If Condition="HasQuest(12039) &amp;&amp; !IsQuestCompleted(12039)" >
-      <Objective QuestName="Black Blood of Yogg-Saron" QuestId="12039" Type="CollectItem" ItemId="36725" CollectCount="10" />
+			<While Condition="!IsQuestCompleted(12039)" >
+				<CustomBehavior File="InteractWith" QuestId="12039" MobId="188432" WaitTime="6000" NumOfTimes="1000" CollectionDistance="1000" InteractByLooting="True" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs">
+					<HuntingGrounds >
+						<Hotspot X="3721.582" Y="2110.064" Z="35.94857" />
+						<Hotspot X="3718.349" Y="2072.566" Z="21.22411" />
+						<Hotspot X="3709.718" Y="2033.174" Z="19.70518" />
+						<Hotspot X="3750.398" Y="2029.473" Z="20.10517" />
+						<Hotspot X="3760.519" Y="2068.424" Z="23.77853" />
+						<Hotspot X="3765.931" Y="2107.61" Z="31.6137" />
+						<Hotspot X="3776.813" Y="2146.608" Z="30.44362" />
+						<Hotspot X="3738.233" Y="2155.467" Z="36.7345" />
+					</HuntingGrounds>
+				</CustomBehavior>
+			</While>
     </If>
     <If Condition="HasQuest(12036) &amp;&amp; !IsQuestCompleted(12036)" >
       <RunTo X="3679.364" Y="2163.315" Z="35.72369" />
