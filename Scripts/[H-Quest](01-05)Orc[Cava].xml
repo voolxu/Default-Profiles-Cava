@@ -267,10 +267,10 @@
 <PickUp QuestName="Hana'zua" QuestId="25128" GiverName="Canaga Earthcaller" GiverId="5887" X="-630.0197" Y="-4204.552" Z="38.13424" />
 <TurnIn QuestName="Galgar's Cactus Apple Surprise" QuestId="25136" TurnInName="Galgar" TurnInId="9796" X="-561.6285" Y="-4221.799" Z="41.59056" />
 <PickUp QuestName="Vile Familiars" QuestId="25131" GiverName="Zureetha Fargaze" GiverId="3145" X="-570.0608" Y="-4259.88" Z="38.5972" />
-<PickUp QuestName="Lazy Peons" QuestId="25134" GiverName="Foreman Thazz'ril" GiverId="11378" X="-567.868" Y="-4264.465" Z="38.8359" />
-<If Condition="HasQuest(25134) &amp;&amp; !IsQuestCompleted(25134)" >
-  <While Condition="!IsQuestCompleted(25134)" >
-		<CustomBehavior File="InteractWith" QuestId="25134" MobId="10556" NumOfTimes="1000" AuraIdOnMob="17743" InteractByUsingItemId="16114" Range="5" CollectionDistance="1000" ProactiveCombatStrategy="ClearMobsTargetingUs">
+<PickUp QuestName="Lazy Peons" QuestId="37446" GiverName="Foreman Thazz'ril" GiverId="11378" X="-567.868" Y="-4264.465" Z="38.8359" />
+<If Condition="HasQuest(37446) &amp;&amp; !IsQuestCompleted(37446)" >
+  <While Condition="!IsQuestCompleted(37446)" >
+		<CustomBehavior File="InteractWith" QuestId="37446" MobId="10556" NumOfTimes="1000" AuraIdOnMob="17743" InteractByUsingItemId="16114" Range="5" CollectionDistance="1000" ProactiveCombatStrategy="ClearMobsTargetingUs">
 		  <HuntingGrounds>
 				<Hotspot X="-621.9144" Y="-4349.424" Z="41.01179" />
 				<Hotspot X="-647.916" Y="-4294.271" Z="40.74682" />
@@ -288,7 +288,7 @@
 <TurnIn QuestName="Sarkoth" QuestId="25129" TurnInName="Hana'zua" TurnInId="3287" X="-397.761" Y="-4108.986" Z="50.20467" />
 <PickUp QuestName="Back to the Den" QuestId="25130" GiverName="Hana'zua" GiverId="3287" X="-397.761" Y="-4108.986" Z="50.20467" />
 <TurnIn QuestName="Back to the Den" QuestId="25130" TurnInName="Gornek" TurnInId="3143" X="-597.7361" Y="-4248.255" Z="38.9561" />
-<TurnIn QuestName="Lazy Peons" QuestId="25134" TurnInName="Foreman Thazz'ril" TurnInId="11378" X="-567.868" Y="-4264.465" Z="38.8359" />
+<TurnIn QuestName="Lazy Peons" QuestId="37446" TurnInName="Foreman Thazz'ril" TurnInId="11378" X="-567.868" Y="-4264.465" Z="38.8359" />
 <TurnIn QuestName="Vile Familiars" QuestId="25131" TurnInName="Zureetha Fargaze" TurnInId="3145" X="-570.0608" Y="-4259.88" Z="38.5972" />
 <PickUp QuestName="Burning Blade Medallion" QuestId="25132" GiverName="Zureetha Fargaze" GiverId="3145" X="-570.0608" Y="-4259.88" Z="38.5972" />
 <PickUp QuestName="Thazz'ril's Pick" QuestId="25135" GiverName="Foreman Thazz'ril" GiverId="11378" X="-567.868" Y="-4264.465" Z="38.8359" />
