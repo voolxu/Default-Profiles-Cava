@@ -1,5 +1,5 @@
 <HBProfile>
-<Name>[Quest]MOP 89 to 90 With Loot By [Cava] $Rev: 232 $</Name>
+<Name>[Quest]MOP 89 to 90 With Loot By [Cava] $Rev$</Name>
 	
 <QuestOrder>
   <CustomBehavior File="RunMacro" Macro="/script SetCVar('AutoLootDefault', 1)" NumOfTimes="1" WaitTime="1000" />
