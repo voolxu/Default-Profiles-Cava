@@ -3263,6 +3263,7 @@
     <If Condition="HasQuest(12056) &amp;&amp; !IsQuestCompleted(12056)" >
       <Objective QuestName="Marked for Death: High Cultist Zangus" QuestId="12056" Type="CollectItem" ItemId="36741" CollectCount="1" />
     </If>
+
     <If Condition="HasQuest(12039) &amp;&amp; !IsQuestCompleted(12039)" >
 			<While Condition="!IsQuestCompleted(12039)" >
 				<CustomBehavior File="InteractWith" QuestId="12039" MobId="188432" WaitTime="6000" NumOfTimes="1000" CollectionDistance="1000" InteractByLooting="True" PreInteractMountStrategy="DismountOrCancelShapeshift" ProactiveCombatStrategy="ClearMobsTargetingUs">
